@@ -1,0 +1,48 @@
+name: Submit MCP news / launch
+description: Share a company launch, project update, tool, MCP server, SDK, registry, event, or research item for newsletter consideration.
+title: "[Submission]: "
+labels: [submission]
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project/company name
+      placeholder: ExampleCo MCP Server
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Primary link
+      description: Announcement, docs, repo, demo, blog post, or launch page.
+      placeholder: https://example.com/launch
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Briefly describe the launch or update.
+    validations:
+      required: true
+  - type: textarea
+    id: why-it-matters
+    attributes:
+      label: Why does it matter for MCP builders?
+      description: Practical developer impact, not marketing copy.
+    validations:
+      required: true
+  - type: textarea
+    id: builder-note
+    attributes:
+      label: Builder note / technical details
+      description: Implementation details, caveats, auth/security notes, pricing limits, API docs, compatibility, etc.
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact / attribution
+      description: Optional email, X/LinkedIn/GitHub handle, or company contact.
+    validations:
+      required: false
